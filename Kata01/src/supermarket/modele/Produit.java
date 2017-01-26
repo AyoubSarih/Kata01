@@ -1,23 +1,17 @@
-package supermarket.model;
-
+package supermarket.modele;
 
 public class Produit {
 	int id;
 	Prix prix;
-	Double quantite;
+	double quantite;
 	
-	public Produit(int id, Prix prix, Double quantite) {
+	public Produit(int id, Prix prix, double quantite) {
 		super();
 		this.id = id;
 		this.prix = prix;
 		this.quantite = quantite;
 	}
-	
-	public void acheter(Double quantite){
-		if(this.quantite>=quantite){
-			this.quantite-=quantite;
-		}
-	}
+
 	public int getId() {
 		return id;
 	}
@@ -34,11 +28,13 @@ public class Produit {
 		this.prix = prix;
 	}
 
-	public Double getQuantite() {
+	public double getQuantite() {
 		return quantite;
 	}
 
-	public void setQuantite(Double quantite) {
+	public void setQuantite(double quantite) {
 		this.quantite = quantite;
 	}
+	
+	
 }
